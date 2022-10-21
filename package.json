@@ -1,0 +1,41 @@
+{
+  "name": "alive-console",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite serve --mode local",
+    "build": "vue-tsc --noEmit && vite build --mode production",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix --no-verify"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "dequester": "^0.1.8",
+    "pinia": "^2.0.23",
+    "vue": "^3.2.41",
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-eslint-parser": "^9.1.0",
+    "vue-tsc": "^0.40.4"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}
